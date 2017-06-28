@@ -10,23 +10,17 @@ import {
     Link
 } from 'react-router-dom'
 
-const Home = () => (
-    <div>
-        <h2>Home</h2>
-    </div>
-)
+import Entry from './entry.jsx';
+import Home from './home';
+import About from './about';
 
-const About = () => (
-    <div>
-        <h2>About</h2>
-    </div>
-)
+
 
 const Topic = ({ match }) => (
     <div>
         <h3>{match.params.topicId}</h3>
     </div>
-)
+);
 
 const Topics = ({ match }) => (
     <div>
@@ -59,17 +53,11 @@ const Topics = ({ match }) => (
 const BasicExample = () => (
     <Router>
         <div>
-            <ul>
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/about">About</Link></li>
-                <li><Link to="/topics">Topics</Link></li>
-            </ul>
-
-            <hr/>
 
             <Route exact path="/" component={Home}/>
             <Route path="/about" component={About}/>
             <Route path="/topics" component={Topics}/>
+            <Route path="/entry" component={Entry}/>
         </div>
     </Router>
 )

@@ -4,13 +4,14 @@ import {AppContainer} from 'react-hot-loader';
 import App from './components/App';
 
 
+
 // 定义要挂载的 DOM 节点
 const MountNode = document.getElementById('app');
 
 const render = (App) => {
     ReactDOM.render(
         <AppContainer>
-            <App></App>
+            <App/>
         </AppContainer>,
         MountNode
     )

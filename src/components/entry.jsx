@@ -5,7 +5,7 @@ export default class Entry extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            msg: 'Hello World!'
+            msg: 'Hello World !'
         };
     }
     render() {

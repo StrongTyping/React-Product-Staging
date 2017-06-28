@@ -1,6 +1,6 @@
 import IndexComponent from '../components/index';
 import AboutComponent from '../components/About';
-import HomeComponent from '../components/Home';
+import HomeComponent from '../components/home';
 import JoinComponent from '../components/Join';
 
 // 根路由
